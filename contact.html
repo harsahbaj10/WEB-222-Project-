@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact XYZ Store</title>
+    <script src="script.js"></script>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #000000;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #98579c;
+            color: white;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #98579c;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        main {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #98579c;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .red-button {
+            background-color: #e44d26;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .clear-button {
+            background-color: white;
+            border: 2px solid #e44d26;
+            color: #e44d26;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .clear-button:hover {
+            background-color: #e44d26;
+            color: white;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #98579c;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aesthetic Clouds</h1>
+    </header>
+    <nav>
+        <b><a href="index.html">Home</a></b> &nbsp;&nbsp;
+        <b><a href="about.html">About</a></b> &nbsp;&nbsp;
+        <b><a href="contact.html">Contact</a></b> &nbsp;&nbsp;
+        <b><a href="product.html">Product</a></b> &nbsp;&nbsp;
+        <b><a href="services.html">Services</a></b>
+    </nav>
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="button" id="submit-button" class="red-button">Submit</button>
+            <button type="button" id="clear-button" class="clear-button">Clear</button>
+        </form>
+    </main>
+    <footer>
+        Aesthetic Clouds<br>
+        12010 XYZ Trails Road<br>
+        Zephyr, CA 95555<br>
+        888-555-5555
+    </footer>
+</body>
+
+</html>

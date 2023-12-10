@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <body>
+        <title>Menu List</title>
+        <style>
+            body {
+                font-family:'Times New Roman', Times, serif;
+            }
+    
+            .menu-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+    
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+    
+            ul li {
+                margin: 5px 0;
+            }
+    
+            ul li a {
+                text-decoration: none; 
+                color: #333;           
+            }
+    
+            ul li a:hover {
+                color: #007BFF;       
+            }
+    
+        </style>
+    </head>
+    <body>
+    
+    <div class="menu">
+        <div class="menu-title">Products Offered</div>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="About.html"><b>About</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+            <li><a href="product.html"><b>Product</b></a></li>
+            <li><a href="services.html"><b>Services</b></a></li>
+        </ul>
+        <style>
+            #productTable {
+                width: 100%;
+                border-collapse: collapse;
+                font-family: Arial, sans-serif;
+                margin: 20px 0;
+            }
+    
+            #productTable th, #productTable td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+    
+            #productTable th {
+                background-color: #f2f2f2;
+                color: #333;
+            }
+    
+            #productTable tr:nth-child(even) {
+                background-color: #f5f5f5;
+            }
+    
+            #productTable tr:hover {
+                background-color: #ddd;
+            }
+    
+            img {
+                border-radius: 10px; 
+            }
+        </style>
+    </head>
+    <body>
+    
+        <table border="1" id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="productId1">1</td>
+                    <td id="productTitle1">Simple subtle Coffee Table</td>
+                    <td id="productPrice1">67.95</td>
+                    <td id="productDesc1">Simple classic coffee table, nothing more</td>
+                    <td><img src="image1.webp" alt="Product Image 1" width="100"></td>
+                    <td id="productCategory1">Coffee table</td>
+                </tr>
+                <tr>
+                    <td id="productId2">2</td>
+                    <td id="productTitle2">Premium Oak wood chair</td>
+                    <td id="productPrice2">22.30</td>
+                    <td id="productDesc2">These chairs are made of premium oak wood and are built to last taking in consideration the sustainability and cost efficiency </td>
+                    <td><img src="image2.webp" alt="Product Image 2" width="100"></td>
+                    <td id="productCategory2">Chair</td>
+                </tr>
+                <tr>
+                    <td id="productId3">3</td>
+                    <td id="productTitle3">Cedar wood study Tables</td>
+                    <td id="productPrice3">55.99</td>
+                    <td id="productDesc3">These tables are made of premium cedar and are a testament of quality made to last and feel premium. Ideal for children and adults both.</td>
+                    <td><img src="image3.webp" alt="Product Image 3" width="100"></td>
+                    <td id="productCategory3">Study Table</td>
+                </tr>
+                <tr>
+                    <td id="productId4">4</td>
+                    <td id="productTitle4">Family sofa's</td>
+                    <td id="productPrice4">150.99</td>
+                    <td id="productDesc4">These sofa's are highly customizable and comfortable filled with cotton, these sofas are so comfortable to sit on that it makes them feel like clouds.(Available in any color of your choice)</td>
+                    <td><img src="image4.webp" alt="Product Image 4" width="100"></td>
+                    <td id="productCategory4">Sofa</td>
+                </tr>
+                <tr>
+                    <td id="productId5">5</td>
+                    <td id="productTitle5">The comfortable friendly Bean-bags</td>
+                    <td id="productPrice5">94.99</td>
+                    <td id="productDesc4">The comfortable bean bag to watch all your tv shows and eat popcorn while relaxing. These bags are so comfortable that once you sit on them getting up might feel like a mammoth task</td>
+                    <td><img src="image5.jpg" alt="Product Image 5" width="100"></td>
+                    <td id="productCategory5">Bean Bag</td>
+
+
+                    <tr>
+                        <td id="productId6">6</td>
+                        <td id="productTitle6">Dholakpur ka Raju</td>
+                        <td id="productPrice6">69.69</td>
+                        <td id="productDesc6">Raju is a very friendly and skinny gorila</td>
+                        <td><img src="image7.jpg" alt="Product Image 5" width="100"></td>
+                        <td id="productCategory6">Fudu</td>
+        </table>
+    
+
+    </body>
+    <body>
+        <h1>Product Information</h1>
+        <form id="productForm">
+            <label for="productId">Product ID:</label>
+            <input type="text" id="productId" name="productId">
+            <input type="submit" value="Submit">
+        </form>
+    
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>
