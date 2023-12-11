@@ -73,3 +73,26 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error fetching weather data:', error);
         });
 });
+
+
+document.getElementById('productForm').addEventListener('submit', function(event) {
+    // Prevents the form from actually submitting and reloading the page.
+    event.preventDefault();
+
+    // Get the product ID entered by the user.
+    const enteredId = document.getElementById('productId').value;
+
+    // Find the corresponding product details from the table.
+    const title = document.getElementById('productTitle' + enteredId).textContent;
+    const price = document.getElementById('productPrice' + enteredId).textContent;
+    const description = document.getElementById('productDesc' + enteredId).textContent;
+    const category = document.getElementById('productCategory' + enteredId).textContent;
+
+    // Display the details in a popup.
+    alert(`Product Details:
+ID: ${enteredId}
+Title: ${title}
+Price: ${price}
+Description: ${description}
+Category: ${category}`);
+});
